@@ -18,7 +18,7 @@ async def start(client, message):
 
 @app.on_message(filters.command("play"))
 async def play(client, message):
-    game_url = "https://your-heroku-app.herokuapp.com/"
+    game_url = "https://skull-game-3ac8ada54611.herokuapp.com/"
     await message.reply_text(f"Click below to play!\n[Play Now]({game_url})", disable_web_page_preview=True)
 
 app.run()
