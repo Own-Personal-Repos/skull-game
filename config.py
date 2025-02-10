@@ -1,2 +1,2 @@
-BOT_TOKEN = "YOUR_BOT_TOKEN"
-WEBHOOK_URL = "https://your-heroku-app.herokuapp.com/"
+BOT_TOKEN = "7941431746:AAETHQlveOR6XOIEgVXJd9C1eeRQWNYsOwE"
+WEBHOOK_URL = "https://skull-game-3ac8ada54611.herokuapp.com/"
