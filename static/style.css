@@ -3,8 +3,53 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.game img {
+.game {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.skull {
     width: 100px;
     margin: 10px;
     cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.shuffling {
+    animation: shuffle 2s ease-in-out;
+}
+
+@keyframes shuffle {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(50px); }
+    50% { transform: translateX(-50px); }
+    75% { transform: translateX(30px); }
+}
+
+/* Try Again Button Styling */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    opacity: 0;  /* Initially hidden */
+    transition: opacity 0.5s ease-in-out;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc3700;
+}
+
+.show-button {
+    opacity: 1;  /* Show with fade-in effect */
 }
