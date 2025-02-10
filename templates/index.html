@@ -9,12 +9,18 @@
 </head>
 <body>
     <h1>Find the Red Stone!</h1>
-    <p>Click on a skull to find the stone.</p>
+    <p id="instructions">Watch where the red stone is hidden, then find it.</p>
+    
     <div class="game">
-        <img src="/static/skull.png" onclick="checkStone(1)" id="skull1">
-        <img src="/static/skull.png" onclick="checkStone(2)" id="skull2">
-        <img src="/static/skull.png" onclick="checkStone(3)" id="skull3">
+        <img src="/static/skull.png" id="skull1" class="skull" onclick="checkStone(1)">
+        <img src="/static/skull.png" id="skull2" class="skull" onclick="checkStone(2)">
+        <img src="/static/skull.png" id="skull3" class="skull" onclick="checkStone(3)">
     </div>
+
     <p id="result"></p>
+
+    <div class="button-container">
+        <button id="retry-button" onclick="startGame()">Try Again</button>
+    </div>
 </body>
 </html>
