@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Red Stone</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <h1>Find the Red Stone!</h1>
+    <p>Click on a skull to find the stone.</p>
+    <div class="game">
+        <img src="/static/skull.png" onclick="checkStone(1)" id="skull1">
+        <img src="/static/skull.png" onclick="checkStone(2)" id="skull2">
+        <img src="/static/skull.png" onclick="checkStone(3)" id="skull3">
+    </div>
+    <p id="result"></p>
+</body>
+</html>
